@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Contact</legend>
+
+            <label for="">Name</label>
+            <input type="text">
+
+            <label for="">Last Name</label>
+            <input type="text">
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>Teste Limpar</legend>
+            <label for="">Name</label>
+            <input type="text" title="Informe o seu Nome" autofocus required placeholder="Your name">
+
+            <input type="text" list="fruitsdata" placeholder="Choice a fruit">
+
+            <datalist id="fruitsdata">
+                <option>Apple</option>
+                <option>Banana</option>
+                <option>Pineaple</option>
+                <option>Orange</option>
+                <option>Strawberry</option>
+            </datalist>
+
+            <input type="color" list="colorList" value="#FFFFFF">
+
+            <datalist id="colorList">
+                <option>#00BFFF</option>
+                <option>#FFFF00</option>
+            </datalist>
+
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>Security</legend>
+            <label for="">Password:</label>
+            <input  type="password" placeholder="Inform your password" required minlength="8" maxlength="10" size="15" pattern="[0-9a-fA-F]{2}">
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+<!--
+    <form id="contato" action="">
+    <form>
+
+    <fieldset form="contato"
+        <legend>Contato</legend>
+
+        <label for="">Nome</label>
+        <input type="text">
+
+
+        <label for="nome">Nome Completo</label>
+        <input id="nome" type="text">
+-->

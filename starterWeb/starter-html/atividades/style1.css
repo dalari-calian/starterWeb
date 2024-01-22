@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+    
+    grid-template-rows: 40px 1fr 50px;
+    grid-template-columns: 50% 50%;
+}
+
+header{
+    grid-area: header;
+    background-color: rgba(0, 128, 0, 0.522);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+main{
+    grid-area: main;
+    background-color: rgba(255, 0, 0, 0.522);
+    letter-spacing: 4px;
+    display: absolute;
+    line-height: 30px;
+    text-transform: lowercase;
+    text-transform: uppercase;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: underline dotted white;
+    text-shadow: 1px 3px 8px white, 1px 1px 1px yellow;
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgba(0, 0, 255, 0.522);
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgba(128, 128, 128, 0.522);
+}
